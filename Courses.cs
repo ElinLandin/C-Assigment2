@@ -1,6 +1,6 @@
 ﻿namespace WestcoastEducation;
 
-public class AddHandler
+public class Courses
 {
 
 }
