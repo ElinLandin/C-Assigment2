@@ -1,6 +1,6 @@
 ﻿namespace WestcoastEducation;
 
-public class ListStudents
+public class ListStudents : Student
 {
 
 }

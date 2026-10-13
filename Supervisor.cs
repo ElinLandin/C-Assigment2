@@ -1,6 +1,6 @@
 ﻿namespace WestcoastEducation;
 
-public class AddAdmin
+public class Supervisor : Person
 {
 
 }

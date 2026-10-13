@@ -1,6 +1,6 @@
 ﻿namespace WestcoastEducation;
 
-public class Handler
+public class Admin : Person
 {
 
 }
