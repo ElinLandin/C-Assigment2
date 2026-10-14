@@ -1,6 +1,6 @@
 ﻿namespace WestcoastEducation;
 
-public class ListCourses : Courses
+public class CourseManager : Courses
 {
     
 }

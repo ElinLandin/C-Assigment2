@@ -1,8 +1,8 @@
 ﻿namespace WestcoastEducation;
 
-public class Employee
+public class Employee : Person
 {
     public string? AreaOfExpertise{ get; set; } 
     public string? Courses{ get; set; } 
-    public string? HireDate{ get; set; } 
+    public DateTime HireDate{ get; set; } 
 }
