@@ -1,1 +1,9 @@
-﻿Console.WriteLine("Hello, World!");
+﻿namespace WestcoastEducation;
+
+
+public class Program
+{
+
+    
+
+}
