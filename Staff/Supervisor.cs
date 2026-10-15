@@ -1,6 +1,6 @@
 ﻿namespace WestcoastEducation;
 
-public class Supervisor : Person
+public class Supervisor : Employee
 {
 
 }

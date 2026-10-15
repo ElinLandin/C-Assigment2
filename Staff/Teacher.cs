@@ -1,6 +1,6 @@
 ﻿namespace WestcoastEducation;
 
-public class Teacher : Person
+public class Teacher : Employee
 {
 
 }

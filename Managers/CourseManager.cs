@@ -1,8 +1,7 @@
 ﻿namespace WestcoastEducation;
 
-public class CourseManager : Courses
+public class CourseManager
 {
-    
     List<Courses> courseList = [];
     public void AddCourse()
     {
