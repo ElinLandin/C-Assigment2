@@ -8,5 +8,12 @@ public class Courses(string courseNumber, string courseTitle, string startDate)
     public string? CourseLengthDays { get; set; }
     public string? StartDate { get; set; } = startDate;
     public string? EndDate { get; set; }
+
+
+    public override string ToString()
+    {
+        return  $"Kursnummer: {CourseNumber}, Kurstitel: {CourseTitle}, " +
+                $"Veckor: {CourseLengthWeeks}, Dagar: {CourseLengthDays}, Startdatum: {StartDate} Slutdatum: {EndDate}";
+    }
     
 }

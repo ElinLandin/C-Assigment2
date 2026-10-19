@@ -24,6 +24,7 @@ public class CourseManager
 
         courseList.AddRange ([csharpCourse, psychologyCourse, vegetableCourse]);
 
+
         Console.WriteLine("Kurser:");
         Console.WriteLine("---------------------------------------------");
 
