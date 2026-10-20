@@ -1,11 +1,11 @@
 ﻿namespace WestcoastEducation;
 
-public class Person(string firstName, string lastName, string personalIdNumber)
+public class Person
 {
     
-    public string? FirstName{ get; set; } = firstName;
-    public string? LastName{ get; set; } = lastName;
-    public string? PersonalIdNumber{ get; set; } = personalIdNumber;
+    public required string? FirstName{ get; set; }
+    public required string? LastName{ get; set; }
+    public required string? PersonalIdNumber{ get; set; }
     public string? PhoneNumber{ get; set; } 
     public string? Address{ get; set;}
     public string? PostalCode{ get; set;}

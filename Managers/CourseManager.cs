@@ -6,19 +6,28 @@ public class CourseManager
     public void AddCourse()
     {
 
-        Courses csharpCourse = new("CS101", "c# grundkurs", "2027-01-25")
-        {
+        Courses csharpCourse = new()
+        {   
+            CourseNumber = "CS101",
+            CourseTitle = "c# grundkurs",
             CourseLengthWeeks = "8",
+            StartDate = "2027-01-25",
             EndDate = "2027-03-22"
         };
-        Courses psychologyCourse = new("PSY101", "Psykologi A", "2027-08-23")
+        Courses psychologyCourse = new()
         {
+            CourseNumber = "PSY101",
+            CourseTitle = "Psykologi A",
             CourseLengthWeeks = "10",
+            StartDate = "2027-08-23",
             EndDate = "2027-11-01"
         };
-        Courses vegetableCourse = new("VEG101", "Grönsaker 101", "2027-05-10")
+        Courses vegetableCourse = new()
         {
+            CourseNumber = "VEG101",
+            CourseTitle = "Grönsaker 101",
             CourseLengthDays = "3",
+            StartDate = "2027-05-10",
             EndDate = "2027-05-12"
         };
 
@@ -32,6 +41,6 @@ public class CourseManager
         {
             Console.WriteLine(course);
         }
-
+        Console.WriteLine("---------------------------------------------");
     }
 }

@@ -10,8 +10,8 @@ public class Program
         CourseManager courseManager = new();
         courseManager.AddCourse();
 
-        Student students = new();
-        students.AddStudent();
+        StudentManager studentManager = new();
+        studentManager.AddStudent();
     }
 
 }

@@ -1,12 +1,12 @@
 ﻿namespace WestcoastEducation;
 
-public class Courses(string courseNumber, string courseTitle, string startDate)
+public class Courses
 {
-    public string? CourseNumber { get; set; } = courseNumber;
-    public string? CourseTitle { get; set; } = courseTitle;
+    public required string? CourseNumber { get; set; }
+    public required string? CourseTitle { get; set; }
     public string? CourseLengthWeeks { get; set; }
     public string? CourseLengthDays { get; set; }
-    public string? StartDate { get; set; } = startDate;
+    public required string? StartDate { get; set; }
     public string? EndDate { get; set; }
 
 
