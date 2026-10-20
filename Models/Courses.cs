@@ -9,11 +9,21 @@ public class Courses
     public required string? StartDate { get; set; }
     public string? EndDate { get; set; }
 
+    public bool IsItOnline {get; set;}
+
 
     public override string ToString()
     {
-        return  $"Kursnummer: {CourseNumber}, Kurstitel: {CourseTitle}, " +
-                $"Veckor: {CourseLengthWeeks}, Dagar: {CourseLengthDays}, Startdatum: {StartDate} Slutdatum: {EndDate}";
+
+        string courseFormat = "Klassrum";
+
+        if (IsItOnline)
+        {
+            courseFormat = "Distans";
+        }
+
+        return  $"Kursnummer: {CourseNumber}, Kurstitel: {CourseTitle}, Veckor: {CourseLengthWeeks}" +
+                $"Dagar: {CourseLengthDays}, Startdatum: {StartDate} Slutdatum: {EndDate} Kursform: {courseFormat}";
     }
     
 }
