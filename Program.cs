@@ -12,6 +12,9 @@ public class Program
 
         StudentManager studentManager = new();
         studentManager.AddStudent();
-    }
+
+        StaffManager staffManager = new();
+
+    }   
 
 }
