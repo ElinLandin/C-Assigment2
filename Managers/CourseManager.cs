@@ -1,4 +1,6 @@
-﻿namespace WestcoastEducation;
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace WestcoastEducation;
 
 public class CourseManager
 {
@@ -10,25 +12,28 @@ public class CourseManager
         {   
             CourseNumber = "CS101",
             CourseTitle = "c# grundkurs",
-            CourseLengthWeeks = "8",
+            CourseLengthWeeks = 8,
             StartDate = "2027-01-25",
-            EndDate = "2027-03-22"
+            EndDate = "2027-03-22",
+            IsItOnline = true
         };
         Courses psychologyCourse = new()
         {
             CourseNumber = "PSY101",
             CourseTitle = "Psykologi A",
-            CourseLengthWeeks = "10",
+            CourseLengthWeeks = 10,
             StartDate = "2027-08-23",
-            EndDate = "2027-11-01"
+            EndDate = "2027-11-01",
+            IsItOnline = false
         };
         Courses vegetableCourse = new()
         {
             CourseNumber = "VEG101",
             CourseTitle = "Grönsaker 101",
-            CourseLengthDays = "3",
+            CourseLengthDays = 3,
             StartDate = "2027-05-10",
-            EndDate = "2027-05-12"
+            EndDate = "2027-05-12",
+            IsItOnline = false
         };
 
         courseList.AddRange ([csharpCourse, psychologyCourse, vegetableCourse]);
@@ -42,5 +47,17 @@ public class CourseManager
             Console.WriteLine(course);
         }
         Console.WriteLine("---------------------------------------------");
-    }
 }
+        public Courses? GetCourse(string courseNumber)
+        {
+            foreach (var course in courseList)
+            {
+                if (course.CourseNumber== courseNumber)
+                {
+                    return course;
+                }
+            }
+            return null;
+        }
+    }
+
