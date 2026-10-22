@@ -9,7 +9,7 @@ public class CourseManager
     {
         courseList.Add(courses);
     }
-
+//--------------------------------------------------------------------
     public void AddExampleCourse()
     {
 
@@ -42,7 +42,7 @@ public class CourseManager
         AddCourse(psychologyCourse);
         AddCourse(vegetableCourse);
     }
-
+//---------------------------------------------------------------------------
     public void ListCourses()
     {
         Console.WriteLine("Kurser:");
@@ -64,8 +64,6 @@ public class CourseManager
             }
         }
         return null;
-
-        
         
     }
 

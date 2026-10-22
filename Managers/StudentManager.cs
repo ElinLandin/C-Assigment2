@@ -8,7 +8,7 @@ public class StudentManager
     {
         studentList.Add(student);
     }
-
+//--------------------------------------------------------------------------------
     public void AddExampleStudent()
     {
         Student student001 = new()
@@ -48,7 +48,7 @@ public class StudentManager
         AddStudent(student002); 
         AddStudent(student003);
     }
-
+//--------------------------------------------------------------------------------
     public void ListStudents()
     {
         Console.WriteLine("Elever:");
