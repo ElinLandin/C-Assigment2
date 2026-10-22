@@ -9,9 +9,11 @@ public class Program
     {
         CourseManager courseManager = new();
         courseManager.AddExampleCourse();
+        courseManager.ListCourses();
 
         StudentManager studentManager = new();
         studentManager.AddExampleStudent();
+        studentManager.ListStudents();
 
         StaffManager staffManager = new();
 

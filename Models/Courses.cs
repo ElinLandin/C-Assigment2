@@ -12,6 +12,16 @@ public class Courses
     public int GetLengthInDays => (EndDate - StartDate).Days + 1;
     public int GetLengthInWeeks => GetLengthInDays / 7;
 
+    public string GetCourseLength()
+    {
+        if (GetLengthInDays >= 7)
+        {
+            return $"{GetLengthInWeeks} veckor";
+        }
+
+        return $"{GetLengthInDays} dagar";
+    }
+
 //------------------------------------------------------------------
     public override string ToString()
     {
@@ -23,7 +33,7 @@ public class Courses
             courseFormat = "Distans";
         }
 
-        return  $"Kursnummer: {CourseNumber}, Kurstitel: {CourseTitle}, Kurslängd: {GetLengthInDays}, " +
+        return  $"Kursnummer: {CourseNumber}, Kurstitel: {CourseTitle}, Kurslängd: {GetCourseLength()}, " +
                 $"Startdatum: {StartDate:yyyy-MM-dd} Slutdatum: {EndDate:yyyy-MM-dd} Kursform: {courseFormat}";
     }
     
