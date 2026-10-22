@@ -6,12 +6,15 @@ public class Courses
     public required string CourseTitle { get; set; }
     public int CourseLengthWeeks { get; set; }
     public int CourseLengthDays { get; set; }
-    public required string StartDate { get; set; }
-    public string? EndDate { get; set; }
-
+    public required DateTime StartDate { get; set; }
+    public DateTime EndDate { get; set; }
     public bool IsItOnline {get; set;}
 
 
+    public int GetLengthInDays => (EndDate - StartDate).Days + 1;
+    public int GetLengthInWeeks => GetLengthInDays / 7;
+
+//------------------------------------------------------------------
     public override string ToString()
     {
 
@@ -23,7 +26,7 @@ public class Courses
         }
 
         return  $"Kursnummer: {CourseNumber}, Kurstitel: {CourseTitle}, Veckor: {CourseLengthWeeks}, " +
-                $"Dagar: {CourseLengthDays}, Startdatum: {StartDate} Slutdatum: {EndDate} Kursform: {courseFormat}";
+                $"Dagar: {CourseLengthDays}, Startdatum: {StartDate:yyyy-MM-dd} Slutdatum: {EndDate:yyyy-MM-dd} Kursform: {courseFormat}";
     }
     
 }

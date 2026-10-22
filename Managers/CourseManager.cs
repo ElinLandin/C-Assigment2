@@ -13,8 +13,8 @@ public class CourseManager
             CourseNumber = "CS101",
             CourseTitle = "c# grundkurs",
             CourseLengthWeeks = 8,
-            StartDate = "2027-01-25",
-            EndDate = "2027-03-22",
+            StartDate = new DateTime(2027, 1, 25),
+            EndDate = new DateTime(2027, 3, 22),
             IsItOnline = true
         };
         Courses psychologyCourse = new()
@@ -22,8 +22,8 @@ public class CourseManager
             CourseNumber = "PSY101",
             CourseTitle = "Psykologi A",
             CourseLengthWeeks = 10,
-            StartDate = "2027-08-23",
-            EndDate = "2027-11-01",
+            StartDate = new DateTime(2027, 8, 23),
+            EndDate = new DateTime(2027, 11, 1),
             IsItOnline = false
         };
         Courses vegetableCourse = new()
@@ -31,8 +31,8 @@ public class CourseManager
             CourseNumber = "VEG101",
             CourseTitle = "Grönsaker 101",
             CourseLengthDays = 3,
-            StartDate = "2027-05-10",
-            EndDate = "2027-05-12",
+            StartDate = new DateTime(2027, 5, 10),
+            EndDate = new DateTime(2027, 5, 12),
             IsItOnline = false
         };
 
@@ -58,6 +58,9 @@ public class CourseManager
                 }
             }
             return null;
+
+        
+        
         }
     }
 
