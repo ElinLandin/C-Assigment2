@@ -30,7 +30,7 @@ public class StaffManager
           Address = "Felsökeby 101",
           PostalCode = "123 45",
           City = "Debuggbyn",
-          AreaOfExpertise = "C#, Systemutveckling",
+          AreaOfExpertise = "Systemutveckling, Buggexpert",
         };
         Supervisor supervisor = new()
         {
@@ -41,7 +41,7 @@ public class StaffManager
           Address = "Panikparken 7",
           PostalCode = "123 45",
           City = "Hysterihult",
-          AreaOfExpertise = "Projektledning, IT",
+          AreaOfExpertise = "Projektledning, Kaosteori",
           HireDate = new DateTime(1988, 4, 1)
         };
         Administrator administrator = new()
