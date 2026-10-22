@@ -4,7 +4,12 @@ public class StudentManager
 {
     List<Student> studentList = [];
 
-    public void AddStudent()
+    public void AddStudent(Student student)
+    {
+        studentList.Add(student);
+    }
+
+    public void AddExampleStudent()
     {
         Student student001 = new()
         {
@@ -38,9 +43,14 @@ public class StudentManager
             PostalCode = "207 27",
             City = "Köttsjön"
         };
+    
+        AddStudent(student001); 
+        AddStudent(student002); 
+        AddStudent(student003);
+    }
 
-        studentList.AddRange ([student001, student002, student003]);
-
+    public void ListStudents()
+    {
         Console.WriteLine("Elever:");
         Console.WriteLine("---------------------------------------------");
 

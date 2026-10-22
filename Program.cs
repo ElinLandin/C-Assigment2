@@ -8,10 +8,10 @@ public class Program
     static void Main()
     {
         CourseManager courseManager = new();
-        courseManager.AddCourse();
+        courseManager.AddExampleCourse();
 
         StudentManager studentManager = new();
-        studentManager.AddStudent();
+        studentManager.AddExampleStudent();
 
         StaffManager staffManager = new();
 

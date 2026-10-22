@@ -5,14 +5,18 @@ namespace WestcoastEducation;
 public class CourseManager
 {
     List<Courses> courseList = [];
-    public void AddCourse()
+    public void AddCourse(Courses courses)
+    {
+        courseList.Add(courses);
+    }
+
+    public void AddExampleCourse()
     {
 
         Courses csharpCourse = new()
         {   
             CourseNumber = "CS101",
             CourseTitle = "c# grundkurs",
-            CourseLengthWeeks = 8,
             StartDate = new DateTime(2027, 1, 25),
             EndDate = new DateTime(2027, 3, 22),
             IsItOnline = true
@@ -21,7 +25,6 @@ public class CourseManager
         {
             CourseNumber = "PSY101",
             CourseTitle = "Psykologi A",
-            CourseLengthWeeks = 10,
             StartDate = new DateTime(2027, 8, 23),
             EndDate = new DateTime(2027, 11, 1),
             IsItOnline = false
@@ -30,15 +33,18 @@ public class CourseManager
         {
             CourseNumber = "VEG101",
             CourseTitle = "Grönsaker 101",
-            CourseLengthDays = 3,
             StartDate = new DateTime(2027, 5, 10),
             EndDate = new DateTime(2027, 5, 12),
             IsItOnline = false
         };
 
-        courseList.AddRange ([csharpCourse, psychologyCourse, vegetableCourse]);
+        AddCourse(csharpCourse);
+        AddCourse(psychologyCourse);
+        AddCourse(vegetableCourse);
+    }
 
-
+    public void ListCourses()
+    {
         Console.WriteLine("Kurser:");
         Console.WriteLine("---------------------------------------------");
 
@@ -63,4 +69,5 @@ public class CourseManager
         
         }
     }
+    
 

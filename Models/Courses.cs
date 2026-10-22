@@ -4,8 +4,6 @@ public class Courses
 {
     public required string CourseNumber { get; set; }
     public required string CourseTitle { get; set; }
-    public int CourseLengthWeeks { get; set; }
-    public int CourseLengthDays { get; set; }
     public required DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
     public bool IsItOnline {get; set;}
@@ -25,8 +23,8 @@ public class Courses
             courseFormat = "Distans";
         }
 
-        return  $"Kursnummer: {CourseNumber}, Kurstitel: {CourseTitle}, Veckor: {CourseLengthWeeks}, " +
-                $"Dagar: {CourseLengthDays}, Startdatum: {StartDate:yyyy-MM-dd} Slutdatum: {EndDate:yyyy-MM-dd} Kursform: {courseFormat}";
+        return  $"Kursnummer: {CourseNumber}, Kurstitel: {CourseTitle}, Kurslängd: {GetLengthInDays}, " +
+                $"Startdatum: {StartDate:yyyy-MM-dd} Slutdatum: {EndDate:yyyy-MM-dd} Kursform: {courseFormat}";
     }
     
 }
