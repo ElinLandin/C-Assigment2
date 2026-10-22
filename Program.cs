@@ -16,7 +16,7 @@ public class Program
         studentManager.ListStudents();
 
         StaffManager staffManager = new();
-        staffManager.AddExampleStaff();
+        staffManager.AddExampleStaff(courseManager);
         staffManager.ListEmployees();
     }   
 

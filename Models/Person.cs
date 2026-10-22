@@ -16,7 +16,7 @@ public class Person
     {
         return  $"Förnamn: {FirstName}, Efternamn: {LastName}, " +
                 $"Personnummer: {PersonalIdNumber}, Telefonnummer: {PhoneNumber}, " +
-                $"Adress:{Address}, Postkod: {PostalCode}, Stad: {City}";
+                $"Adress: {Address}, Postkod: {PostalCode}, Stad: {City}";
     }
 
 }

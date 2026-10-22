@@ -18,8 +18,8 @@ public class StaffManager
     {
         employeeList.Add(administrator);
     }
-//-----------------------------------------------------------------------
-    public void AddExampleStaff()
+//--------------------------------------------------------------------------------------------
+    public void AddExampleStaff(CourseManager courseManager)
     {
         Teacher teacher = new()
         {
@@ -56,12 +56,32 @@ public class StaffManager
           AreaOfExpertise = "Administration, Pappersvändning",
           HireDate = new DateTime(2000, 1, 10)
         };
+//------------------------------------------------------------------------------------------------------
+
+        Courses? csharp = courseManager.GetCourse("CS101");
+        Courses? psychology = courseManager.GetCourse("PSY101");
+        Courses? vegetables = courseManager.GetCourse("VEG101");
+
+        if (csharp != null)
+        {
+            teacher.AssignedCourses.Add(csharp);
+        }
+
+        if (psychology != null)
+        {
+            supervisor.AssignedCourses.Add(psychology);
+        }
+
+        if (vegetables != null)
+        {
+            administrator.AssignedCourses.Add(vegetables);
+        }
 
         AddTeacher(teacher);
         AddSupervisor(supervisor);
         AddAdministrator(administrator);
     }
-//---------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------
     public void ListEmployees()
     {
         Console.WriteLine("Personal:");

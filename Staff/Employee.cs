@@ -8,6 +8,6 @@ public class Employee : Person
     public override string ToString()
     {
         return base.ToString() +
-            $", Kunskapsområde: {AreaOfExpertise}, ";
+            $", Kunskapsområde: {AreaOfExpertise}";
     }
 }
