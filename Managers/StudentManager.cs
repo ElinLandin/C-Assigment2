@@ -15,8 +15,8 @@ public class StudentManager
         {
             FirstName = "Anna",
             LastName = "Ananasson",
-            PersonalIdNumber = "19990909-9999",
-            PhoneNumber = "0909-999999",
+            PersonalIdNumber = "00000000-0000",
+            PhoneNumber = "9999-999999",
             Address = "Ananasgatan 9",
             PostalCode = "909 99",
             City = "Skrattmåla"
@@ -26,8 +26,8 @@ public class StudentManager
         {
             FirstName = "Torsten",
             LastName = "Tvestjärt",
-            PersonalIdNumber = "20050505-5555",
-            PhoneNumber = "0505-555555",
+            PersonalIdNumber = "00000000-0000",
+            PhoneNumber = "5555-555555",
             Address = "Myrstacksstigen 5",
             PostalCode = "505 55",
             City = "Mögelträsk"  
@@ -37,8 +37,8 @@ public class StudentManager
         {
             FirstName = "Kent-Krister",
             LastName = "Köttsson",
-            PersonalIdNumber = "19720207-0207",
-            PhoneNumber = "0207-002277",
+            PersonalIdNumber = "00000000-0000",
+            PhoneNumber = "2222-222222",
             Address = "Kotlettvägen 7",
             PostalCode = "207 27",
             City = "Köttsjön"

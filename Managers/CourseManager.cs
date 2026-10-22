@@ -54,20 +54,22 @@ public class CourseManager
         }
         Console.WriteLine("---------------------------------------------");
 }
-        public Courses? GetCourse(string courseNumber)
+    public Courses? GetCourse(string courseNumber)
+    {
+        foreach (var course in courseList)
         {
-            foreach (var course in courseList)
+            if (course.CourseNumber== courseNumber)
             {
-                if (course.CourseNumber== courseNumber)
-                {
-                    return course;
-                }
+                return course;
             }
-            return null;
+        }
+        return null;
 
         
         
-        }
     }
+
+    }
+
     
 
