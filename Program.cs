@@ -18,6 +18,6 @@ public class Program
         StaffManager staffManager = new();
         staffManager.AddExampleStaff(courseManager);
         staffManager.ListEmployees();
-    }   
+    }
 
 }

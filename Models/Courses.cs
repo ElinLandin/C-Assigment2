@@ -2,11 +2,25 @@
 
 public class Courses
 {
+    private List<CourseContent> courseContent =[];
+
+    public void AddCourseContent(string topic)
+    {
+        courseContent.Add(new CourseContent { Topic = topic });
+    }
+
+    private class CourseContent
+    {
+        public string Topic { get; set; } = "";
+    }
+
+//---------------------------------------------------------------------
+
     public required string CourseNumber { get; set; }
     public required string CourseTitle { get; set; }
     public required DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
-    public bool IsItOnline {get; set;}
+    public bool IsItOnline { get; set; }
 
 
     public int GetLengthInDays => (EndDate - StartDate).Days + 1;
@@ -22,7 +36,7 @@ public class Courses
         return $"{GetLengthInDays} dagar";
     }
 
-//------------------------------------------------------------------
+    //------------------------------------------------------------------
     public override string ToString()
     {
 
@@ -34,7 +48,8 @@ public class Courses
         }
 
         return  $"Kursnummer: {CourseNumber}, Kurstitel: {CourseTitle}, Kurslängd: {GetCourseLength()}, " +
-                $"Startdatum: {StartDate:yyyy-MM-dd} Slutdatum: {EndDate:yyyy-MM-dd} Kursform: {courseFormat}";
+                $"Startdatum: {StartDate:yyyy-MM-dd} Slutdatum: {EndDate:yyyy-MM-dd} Kursform: {courseFormat}, " +
+                $"Kursinnehåll: {string.Join(", ", courseContent.Select(c => c.Topic))}";
     }
-    
+
 }

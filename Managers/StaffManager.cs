@@ -18,45 +18,45 @@ public class StaffManager
     {
         employeeList.Add(administrator);
     }
-//--------------------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------------------
     public void AddExampleStaff(CourseManager courseManager)
     {
         Teacher teacher = new()
         {
-          FirstName = "Börje",
-          LastName = "Buggström",
-          PersonalIdNumber = "00000000-0000",
-          PhoneNumber = "8888-888888",
-          Address = "Felsökeby 101",
-          PostalCode = "123 45",
-          City = "Debuggbyn",
-          AreaOfExpertise = "Systemutveckling, Buggexpert",
+            FirstName = "Börje",
+            LastName = "Buggström",
+            PersonalIdNumber = "00000000-0000",
+            PhoneNumber = "8888-888888",
+            Address = "Felsökeby 101",
+            PostalCode = "123 45",
+            City = "Debuggbyn",
+            AreaOfExpertise = "Systemutveckling, Buggexpert",
         };
         Supervisor supervisor = new()
         {
-          FirstName = "Kajsa",
-          LastName = "Kaoskvist",
-          PersonalIdNumber = "00000000-0000",
-          PhoneNumber = "4444-444444",
-          Address = "Panikparken 7",
-          PostalCode = "123 45",
-          City = "Hysterihult",
-          AreaOfExpertise = "Projektledning, Kaosteori",
-          HireDate = new DateTime(1988, 4, 1)
+            FirstName = "Kajsa",
+            LastName = "Kaoskvist",
+            PersonalIdNumber = "00000000-0000",
+            PhoneNumber = "4444-444444",
+            Address = "Panikparken 7",
+            PostalCode = "123 45",
+            City = "Hysterihult",
+            AreaOfExpertise = "Projektledning, Kaosteori",
+            HireDate = new DateTime(1988, 4, 1)
         };
         Administrator administrator = new()
         {
-          FirstName = "Barbro",
-          LastName = "Blankett",
-          PersonalIdNumber = "00000000-0000",
-          PhoneNumber = "7777-777777",
-          Address = "Arkivvägen 12",
-          PostalCode = "123 45",
-          City = "Paragrafköping",
-          AreaOfExpertise = "Administration, Pappersvändning",
-          HireDate = new DateTime(2000, 1, 10)
+            FirstName = "Barbro",
+            LastName = "Blankett",
+            PersonalIdNumber = "00000000-0000",
+            PhoneNumber = "7777-777777",
+            Address = "Arkivvägen 12",
+            PostalCode = "123 45",
+            City = "Paragrafköping",
+            AreaOfExpertise = "Administration, Pappersvändning",
+            HireDate = new DateTime(2000, 1, 10)
         };
-//------------------------------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------------------
 
         Courses? csharp = courseManager.GetCourse("CS101");
         Courses? psychology = courseManager.GetCourse("PSY101");
@@ -81,7 +81,7 @@ public class StaffManager
         AddSupervisor(supervisor);
         AddAdministrator(administrator);
     }
-//-----------------------------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------------------------
     public void ListEmployees()
     {
         Console.WriteLine("Personal:");
@@ -92,6 +92,6 @@ public class StaffManager
             Console.WriteLine(employee);
         }
         Console.WriteLine("---------------------------------------------");
-}
     }
-    
+}
+

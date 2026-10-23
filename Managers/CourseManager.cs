@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace WestcoastEducation;
+﻿namespace WestcoastEducation;
 
 public class CourseManager
 {
@@ -9,12 +7,12 @@ public class CourseManager
     {
         courseList.Add(courses);
     }
-//--------------------------------------------------------------------
+    //--------------------------------------------------------------------
     public void AddExampleCourse()
     {
 
         Courses csharpCourse = new()
-        {   
+        {
             CourseNumber = "CS101",
             CourseTitle = "c# grundkurs",
             StartDate = new DateTime(2027, 1, 25),
@@ -38,11 +36,14 @@ public class CourseManager
             IsItOnline = false
         };
 
+        csharpCourse.AddCourseContent("Variabler och datatyper");
+        csharpCourse.AddCourseContent("Klasser och object");
+
         AddCourse(csharpCourse);
         AddCourse(psychologyCourse);
         AddCourse(vegetableCourse);
     }
-//---------------------------------------------------------------------------
+    //---------------------------------------------------------------------------
     public void ListCourses()
     {
         Console.WriteLine("Kurser:");
@@ -53,21 +54,21 @@ public class CourseManager
             Console.WriteLine(course);
         }
         Console.WriteLine("---------------------------------------------");
-}
+    }
     public Courses? GetCourse(string courseNumber)
     {
         foreach (var course in courseList)
         {
-            if (course.CourseNumber== courseNumber)
+            if (course.CourseNumber == courseNumber)
             {
                 return course;
             }
         }
         return null;
-        
-    }
 
     }
 
-    
+}
+
+
 

@@ -1,5 +1,4 @@
-﻿using System.Net.Mail;
-
+﻿
 namespace WestcoastEducation;
 
 public class Supervisor : Employee

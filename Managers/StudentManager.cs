@@ -8,7 +8,7 @@ public class StudentManager
     {
         studentList.Add(student);
     }
-//--------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------
     public void AddExampleStudent()
     {
         Student student001 = new()
@@ -30,7 +30,7 @@ public class StudentManager
             PhoneNumber = "5555-555555",
             Address = "Myrstacksstigen 5",
             PostalCode = "505 55",
-            City = "Mögelträsk"  
+            City = "Mögelträsk"
         };
 
         Student student003 = new()
@@ -43,12 +43,12 @@ public class StudentManager
             PostalCode = "207 27",
             City = "Köttsjön"
         };
-    
-        AddStudent(student001); 
-        AddStudent(student002); 
+
+        AddStudent(student001);
+        AddStudent(student002);
         AddStudent(student003);
     }
-//--------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------
     public void ListStudents()
     {
         Console.WriteLine("Elever:");
@@ -59,5 +59,5 @@ public class StudentManager
             Console.WriteLine(student);
         }
         Console.WriteLine("---------------------------------------------");
-    }   
+    }
 }
